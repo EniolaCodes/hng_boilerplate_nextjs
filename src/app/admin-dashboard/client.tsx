@@ -14,9 +14,9 @@ const Client = () => {
         <div className="mb-4 md:mb-0">
           <div className="mt-4 flex flex-col items-start justify-start">
             <Link href="#" className="py-[6px]">
-              <h1 className="text-[24px] font-bold text-[#525252]">Overview</h1>
+              <h1 className="text-2xl font-bold text-neutral-600">Overview</h1>
             </Link>
-            <p className="text-[16px] font-semibold text-[#525252]">
+            <p className="text-base font-normal text-neutral-600">
               Showing records from the last .....
             </p>
           </div>
