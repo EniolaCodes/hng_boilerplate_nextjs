@@ -8,11 +8,13 @@ import { Chart } from "~/components/AdminDashboard/Chart";
 import { data, gradients } from "~/components/AdminDashboard/productData";
 import TopProductsComponent from "~/components/AdminDashboard/TopProductsComponent";
 import { chartConfig, chartData } from "~/components/chartData";
+import AdminNavbar from "~/components/superadminlayout/navbar/AdminNavbar";
 import { Card } from "~/components/ui/card";
 
 const Client = () => {
   return (
     <>
+      <AdminNavbar />
       <div className="p-4 md:p-8">
         <div className="mb-4 md:mb-0">
           <div className="mt-4 flex flex-col items-start justify-start">
