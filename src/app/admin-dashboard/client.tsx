@@ -34,8 +34,8 @@ const Client = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 gap-[16px] lg:grid-cols-5">
-          <div className="rounded bg-white p-4 shadow-md lg:col-span-3">
+        <div className="mt-6 grid grid-cols-1 gap-[16px] lg:grid-cols-5">
+          <div className="rounded-xl border border-slate-300 bg-white p-4 shadow-md lg:col-span-3">
             <h2 className="mb-4 font-semibold">Overview</h2>
             <div className="rounded p-2">
               {/* <Chart chartData={chartData} chartConfig={chartConfig} /> */}
