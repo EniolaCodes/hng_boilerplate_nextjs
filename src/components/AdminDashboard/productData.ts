@@ -1,5 +1,3 @@
-// src/data/productData.ts
-
 const data = [
   {
     name: "The Lemonade blender",
