@@ -39,10 +39,10 @@ const Client = () => {
 
         <div className="mt-6 grid grid-cols-1 gap-[16px] lg:grid-cols-5">
           <Card className="rounded-xl border border-slate-300 bg-white p-4 shadow-md lg:col-span-3">
-            <h2 className="mb-2 ml-5 text-base font-semibold text-zinc-950">
+            <h2 className="mb-2 ml-4 text-base font-semibold text-zinc-950">
               Overview
             </h2>
-            <div className="p-2">
+            <div className="p-0">
               <Chart chartData={chartData} chartConfig={chartConfig} />
             </div>
           </Card>
