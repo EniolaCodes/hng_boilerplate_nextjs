@@ -1,6 +1,6 @@
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
-import { Card, CardContent } from "~/components/ui/card";
+import { CardContent } from "~/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
@@ -15,7 +15,7 @@ type ChartProperties = {
 
 export function Chart({ chartData = [], chartConfig }: ChartProperties) {
   return (
-    <Card>
+    <div>
       <CardContent className="pl-0">
         <ChartContainer config={chartConfig}>
           <BarChart accessibilityLayer data={chartData} margin={{ top: 20 }}>
@@ -41,6 +41,6 @@ export function Chart({ chartData = [], chartConfig }: ChartProperties) {
           </BarChart>
         </ChartContainer>
       </CardContent>
-    </Card>
+    </div>
   );
 }
