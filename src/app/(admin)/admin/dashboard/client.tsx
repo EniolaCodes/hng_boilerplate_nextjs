@@ -6,7 +6,6 @@ import CardComponent from "~/components/adminDashboard/CardComponent";
 import { cardData } from "~/components/adminDashboard/cardData";
 import { Chart } from "~/components/adminDashboard/Chart";
 import { chartConfig, chartData } from "~/components/adminDashboard/chartData";
-// import { chartConfig, chartData } from "~/components/adminDashboard/chartData";
 import { data, gradients } from "~/components/adminDashboard/productData";
 import TopProductsComponent from "~/components/adminDashboard/TopProductsComponent";
 import { Card } from "~/components/ui/card";
