@@ -28,6 +28,6 @@ export const cardData: CardData[] = [
     title: "Lifetime Sales",
     value: "$450,000.00",
     description: "+150% from last month",
-    icon: `icons/arrowUp.svg`,
+    icon: `/icons/arrowUp.svg`,
   },
 ];
