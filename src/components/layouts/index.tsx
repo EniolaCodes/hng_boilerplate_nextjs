@@ -14,6 +14,7 @@ const index: React.FC<IProperties> = ({ children }) => {
       <div className="flex-1">{children}</div>
       <Footer />
     </div>
+    
   );
 };
 

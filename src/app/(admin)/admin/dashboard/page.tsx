@@ -7,11 +7,7 @@ export const metadata = {
 };
 
 const AdminDashboardPage = () => {
-  return (
-    <>
-      <Client />
-    </>
-  );
+  return <Client />;
 };
 
 export default AdminDashboardPage;
