@@ -3,6 +3,11 @@ import { render, screen } from "@testing-library/react";
 import { Chart } from "~/components/adminDashboard/Chart";
 import { chartConfig, chartData } from "~/components/adminDashboard/chartData";
 
+globalThis.ResizeObserver = class ResizeObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+};
 describe("chart Component", () => {
   it("renders the chart with the correct data", () => {
     expect.assertions(1);

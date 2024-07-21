@@ -67,10 +67,20 @@ const TopProductsComponent: React.FC<TopProductsProperties> = ({
                 style={{ background: gradients[index % gradients.length] }}
               />
               <div>
-                <p className="text-base font-medium">{item.name}</p>
+                <p
+                  data-testid={`product-name-${index}`}
+                  className="text-base font-medium"
+                >
+                  {item.name}
+                </p>
               </div>
             </div>
-            <p className="text-[16px] font-semibold">{item.amount}</p>
+            <p
+              data-testid={`product-amount-${index}`}
+              className="text-[16px] font-semibold"
+            >
+              {item.amount}
+            </p>
           </li>
         ))}
       </ul>
