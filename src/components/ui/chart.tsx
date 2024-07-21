@@ -88,7 +88,7 @@ ${colorConfig
     const color =
       itemConfig.theme?.[theme as keyof typeof itemConfig.theme] ||
       itemConfig.color;
-    return color ? `  --color-${key}: ${color};` : null;
+    return color ? `  --color-${key}: ${color};` : undefined;
   })
   .join("\n")}
 }
@@ -155,7 +155,7 @@ const ChartTooltipContent = React.forwardRef<
       }
 
       if (!value) {
-        return null;
+        return;
       }
 
       return <div className={cn("font-medium", labelClassName)}>{value}</div>;
@@ -170,7 +170,7 @@ const ChartTooltipContent = React.forwardRef<
     ]);
 
     if (!active || !payload?.length) {
-      return null;
+      return;
     }
 
     const nestLabel = payload.length === 1 && indicator !== "dot";
@@ -273,7 +273,7 @@ const ChartLegendContent = React.forwardRef<
     const { config } = useChart();
 
     if (!payload?.length) {
-      return null;
+      return;
     }
 
     return (
