@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../../ui/avatar";
 
 const AdminNavbar = () => {
   return (
-    <nav className="flex items-center justify-between gap-2 bg-[#FDFDFD] px-[10px] py-[14px]">
+    <nav className="flex items-center justify-between gap-2 bg-[#FDFDFD] px-[10px] pt-[14px]">
       <div className="flex h-10 items-center justify-between gap-2 rounded-[6px] border border-[#E4E4E7] px-3 text-sm font-normal placeholder:text-sm">
         <SearchIcon
           data-testid="search"

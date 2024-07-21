@@ -16,10 +16,15 @@ type ChartProperties = {
 export function Chart({ chartData = [], chartConfig }: ChartProperties) {
   return (
     <>
-      <div>
-        <CardContent className="pl-0">
-          <ChartContainer config={chartConfig}>
-            <BarChart accessibilityLayer data={chartData} margin={{ top: 20 }}>
+      <div className="h-full w-full">
+        <CardContent className="h-full w-full pl-0">
+          <ChartContainer className="h-full w-full p-0" config={chartConfig}>
+            <BarChart
+              className="w-full"
+              accessibilityLayer
+              data={chartData}
+              margin={{ top: 20, bottom: 2 }}
+            >
               <CartesianGrid vertical={false} />
               <XAxis
                 dataKey="month"

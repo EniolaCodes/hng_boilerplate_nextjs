@@ -17,7 +17,7 @@ const TopProductsComponent: React.FC<TopProductsProperties> = ({
   gradients,
 }) => {
   return (
-    <Card className="w-full rounded-xl border border-slate-300 bg-white p-4 shadow lg:col-span-2">
+    <Card className="rounded-xl border border-slate-300 bg-white p-4 shadow">
       <div className="mb-6 flex items-center justify-between">
         <div className="flex flex-col items-start gap-2">
           <h2 className="text-2xl font-semibold text-neutral-950">
@@ -29,7 +29,7 @@ const TopProductsComponent: React.FC<TopProductsProperties> = ({
         </div>
         <button className="flex items-center justify-center gap-2 rounded-md bg-orange-500 px-4 py-2 text-sm font-medium text-neutral-50">
           View All
-          <span className="">
+          <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

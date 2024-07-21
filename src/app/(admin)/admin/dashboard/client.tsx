@@ -12,10 +12,10 @@ import { Card } from "~/components/ui/card";
 
 const Client = () => {
   return (
-    <section className="p-4 md:p-8">
+    <section className="px-4 md:p-4 md:pt-0">
       <div className="mb-4 md:mb-0">
-        <div className="mt-4 flex flex-col items-start justify-start">
-          <Link href="#" className="py-[6px]">
+        <div className="flex flex-col items-start justify-start">
+          <Link href="#" className="pb-[6px]">
             <h1 className="text-2xl font-bold text-neutral-600">Overview</h1>
           </Link>
           <p className="text-base font-normal text-neutral-600">
@@ -36,14 +36,12 @@ const Client = () => {
         ))}
       </div>
 
-      <div className="mt-6 grid grid-cols-1 gap-[16px] lg:grid-cols-5">
-        <Card className="rounded-xl border border-slate-300 bg-white p-4 shadow-md lg:col-span-3">
+      <div className="mt-6 flex flex-col gap-4 lg:flex-row">
+        <Card className="rounded-xl border border-slate-300 bg-white p-4 shadow-md lg:flex-1">
           <h2 className="mb-2 ml-4 text-base font-semibold text-zinc-950">
             Overview
           </h2>
-          <div className="p-0">
-            <Chart chartData={chartData} chartConfig={chartConfig} />
-          </div>
+          <Chart chartData={chartData} chartConfig={chartConfig} />
         </Card>
         <TopProductsComponent data={data} gradients={gradients} />
       </div>
