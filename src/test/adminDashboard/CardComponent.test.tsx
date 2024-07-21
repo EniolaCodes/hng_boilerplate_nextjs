@@ -1,7 +1,5 @@
 import { render, screen } from "@testing-library/react";
 
-import "@testing-library/jest-dom";
-
 import CardComponent from "~/components/adminDashboard/CardComponent";
 import { cardData } from "~/components/adminDashboard/cardData";
 

@@ -43,7 +43,12 @@ export function Chart({ chartData = [], chartConfig }: ChartProperties) {
                 cursor={false}
                 content={<ChartTooltipContent hideLabel />}
               />
-              <Bar dataKey="revenue" fill="var(--color-desktop)" radius={8} />
+              <Bar
+                dataKey="revenue"
+                fill="var(--color-desktop)"
+                radius={8}
+                data-testid="bar"
+              />
             </BarChart>
           </ChartContainer>
         </CardContent>
