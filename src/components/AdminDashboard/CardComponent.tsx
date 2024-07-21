@@ -19,7 +19,7 @@ const CardComponent: FC<CardProperties> = ({
   return (
     <Card className="border border-[#CBD5E1] bg-white shadow-md">
       <CardHeader>
-        <CardTitle>
+        <CardTitle className="text-neutral-950">
           {title}
           <Image
             src={icon}

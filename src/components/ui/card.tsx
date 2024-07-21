@@ -38,6 +38,7 @@ const CardTitle = React.forwardRef<
     className={cn(
       "flex items-center justify-between text-sm font-medium",
       className,
+      "text-sm font-medium leading-none tracking-tight",
     )}
     {...properties}
   />
